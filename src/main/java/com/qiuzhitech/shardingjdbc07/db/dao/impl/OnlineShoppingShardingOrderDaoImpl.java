@@ -3,9 +3,11 @@ package com.qiuzhitech.shardingjdbc07.db.dao.impl;
 import com.qiuzhitech.shardingjdbc07.db.dao.OnlineShoppingShardingOrderDao;
 import com.qiuzhitech.shardingjdbc07.db.mappers.OnlineShoppingShardingOrderMapper;
 import com.qiuzhitech.shardingjdbc07.db.po.OnlineShoppingShardingOrder;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
 
+@Repository
 public class OnlineShoppingShardingOrderDaoImpl implements OnlineShoppingShardingOrderDao {
     @Resource
     OnlineShoppingShardingOrderMapper onlineShoppingOrderMapper;
