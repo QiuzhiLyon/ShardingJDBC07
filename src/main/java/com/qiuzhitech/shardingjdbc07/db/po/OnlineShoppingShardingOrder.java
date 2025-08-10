@@ -1,0 +1,28 @@
+package com.qiuzhitech.shardingjdbc07.db.po;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+
+import java.util.Date;
+
+@Builder
+@Data
+@AllArgsConstructor
+public class OnlineShoppingShardingOrder {
+    private Long orderId;
+
+    private String orderNo;
+
+    private Integer orderStatus;
+
+    private Long commodityId;
+
+    private Long userId;
+
+    private Long orderAmount;
+
+    private Date createTime;
+
+    private Date payTime;
+}
